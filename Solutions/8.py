@@ -60,6 +60,6 @@ for line in s:
         scr = do_rotation(scr, cmd.group(2), int(cmd.group(3)), int(cmd.group(4)))
 
 print 'Part 1: {} lit pixels'.format(get_lit(scr))
-
+print 'Part 2:'
 for line in scr:
     print ''.join(['*' if e else ' ' for e in line])
